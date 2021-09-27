@@ -1,0 +1,12 @@
+let blu = Graphic(image: imageLiteral(resourceName: "Blu1@2x.png"))
+let theOrigin = Point(x:0, y:0)
+scene.place(blu, at:theOrigin)
+var images = [ imageLiteral(resourceName: "soccerball@2x.png"), imageLiteral(resourceName: "tennisball@2x.png"),  imageLiteral(resourceName: "baseball@2x.png"),
+ imageLiteral(resourceName: "billiardball@2x.png"),  imageLiteral(resourceName: "basketball@2x.png")]
+ var postion = Point(x:75, y:75)
+ for image in images {
+    let yeah1 = Graphic(image: image)
+    scene.place(yeah1, at: position)
+    position.x += 75
+    position.y += 75
+}
